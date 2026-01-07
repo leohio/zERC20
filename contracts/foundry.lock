@@ -29,12 +29,6 @@
       "rev": "8205c97ec4a35a9adb854b70b2c9ba92668d1304"
     }
   },
-  "lib/solady": {
-    "tag": {
-      "name": "v0.1.26",
-      "rev": "acd959aa4bd04720d640bf4e6a5c71037510cc4b"
-    }
-  },
   "lib/solidity-bytes-utils": {
     "rev": "6458fb2780a3092bc756e737f246be1de6d3d362"
   }
