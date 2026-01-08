@@ -2,7 +2,7 @@
   "lib/LayerZero-v2": {
     "branch": {
       "name": "main",
-      "rev": "2ff4988f85b5c94032eb71bbc4073e69c078179d"
+      "rev": "ab9b083410b9359285a5756807e1b6145d4711a7"
     }
   },
   "lib/devtools": {
