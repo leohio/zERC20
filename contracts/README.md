@@ -69,6 +69,16 @@ forge test
 ```
 Run these commands inside `contracts/` to ensure the workspace compiles and tests pass before broadcasting transactions.
 
+Coverage
+--------
+Generate an LCOV report for the Solidity tests:
+```bash
+forge coverage --report lcov --report-file lcov.info --ir-minimum --exclude-tests --no-match-coverage 'script/|src/verifiers/' && genhtml lcov.info --output-directory coverage
+```
+The LCOV report is written to `contracts/lcov.info` and the HTML output to `contracts/coverage/`.
+Install `genhtml` via `lcov` if needed (e.g. `brew install lcov` on macOS, `sudo apt-get install -y lcov` on Debian/Ubuntu).
+If you hit a "stack too deep" error during coverage, the `coverage` script uses `--ir-minimum` to enable `viaIR` with minimal optimization. The script also excludes `test/`, `script/`, and `src/verifiers/` from the coverage report.
+
 Deploying the Hub
 -----------------
 ```bash
